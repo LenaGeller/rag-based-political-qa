@@ -110,4 +110,4 @@ This project is provided for demonstration and evaluation purposes only.
 It is not intended as a political recommendation system or a substitute for independent political judgment.
 
 ## Test it!
-[Link to QA]([https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/]).
+[Link to QA](https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/).
