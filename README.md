@@ -1,6 +1,6 @@
 # rag-based-political-qa
 Documentation and showcase of a RAG-based political question-answering system.
-![Sample QA](Output/1.png)
+![Sample QA](output/1.png)
 
 ## Project Overview
 
@@ -27,8 +27,8 @@ SPD
 CDU/CSU
 
 The system is conceptually extensible, but was deliberately limited in scope to prioritize controlled experimentation over completeness.
-![Sample QA](Output/8.png)
-![Sample QA](Output/2.png)
+![Sample QA](output/8.png)
+![Sample QA](output/2.png)
 
 ### Core Idea: Structured Political Questions
 
@@ -47,7 +47,7 @@ Government responsibility questions
 Conflict and tension-related questions
 
 This allows the system to avoid misleading answers (e.g. normative judgments where the source material does not justify them).
-![Sample QA](Output/4.png)
+![Sample QA](output/4.png)
 
 ### System Design (Conceptual)
 
@@ -90,7 +90,7 @@ This demo includes a pre-built Chroma vector database generated from publicly av
 The goal is to demonstrate architecture, document weighting, and retrieval logic without running time- and cost-intensive embedding pipelines at startup.
 
 Index creation is conceptually part of the system but intentionally externalized in this demo setup.
-![Sample QA](Output/5.png)
+![Sample QA](output/5.png)
 
 ### Future Extensions
 
