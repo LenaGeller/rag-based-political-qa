@@ -1,6 +1,6 @@
 # rag-based-political-qa
 Documentation and showcase of a RAG-based political question-answering system.
-![Sample QA](output/RAG Diagram2.drawio.png)
+![Sample QA](output/RAGDiagram2.drawio.png)
 
 ## Project Overview
 
