@@ -1,10 +1,11 @@
 # rag-based-political-qa
 Documentation and showcase of a RAG-based political question-answering system.
-![Sample QA](output/1.png)
+![Sample QA](output/RAG Diagram2.drawio.png)
 
 ## Project Overview
 
 ### RAG-Based Political Question Answering System (Germany)
+![Sample QA](output/1.png)
 
 This project explores how a Retrieval-Augmented Generation (RAG) architecture can be used to support political information access based exclusively on official documents.
 
