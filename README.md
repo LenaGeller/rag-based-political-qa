@@ -86,11 +86,12 @@ Compared to generic political Q&A systems, the strength of this approach lies in
 
 ### Demo Notes
 
-This demo includes a pre-built Chroma vector database generated from publicly available political documents (party programs, coalition agreements, etc.).
+For demo purposes, the vector database is prebuilt and loaded from external storage to allow instant interaction without preprocessing.
 
 The goal is to demonstrate architecture, document weighting, and retrieval logic without running time- and cost-intensive embedding pipelines at startup.
 
-Index creation is conceptually part of the system but intentionally externalized in this demo setup.
+Index creation is conceptually part of the system but intentionally externalized in this demo setup. 
+
 ![Sample QA](output/5.png)
 
 ### Future Extensions
