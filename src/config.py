@@ -3,6 +3,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 import zipfile
 from huggingface_hub import hf_hub_download
+import shutil
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ def ensure_chroma_db():
     )
 
     # Zip an festen Ort kopieren (optional, aber übersichtlich)
-    Path(downloaded_zip).replace(ZIP_PATH)
+    shutil.copy2(downloaded_zip, ZIP_PATH)
 
     print("📦 Unzipping...")
     with zipfile.ZipFile(ZIP_PATH, "r") as z:
