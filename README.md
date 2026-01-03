@@ -1,4 +1,4 @@
-# rag-based-political-qa
+# rag-based-political-qa      [Link to QA](https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/).
 Documentation and showcase of a RAG-based political question-answering system.
 ![Sample QA](output/RAGDiagram.drawioFinal.png)
 
@@ -112,4 +112,3 @@ This project is provided for demonstration and evaluation purposes only.
 It is not intended as a political recommendation system or a substitute for independent political judgment.
 
 ## Test it!
-[Link to QA](https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/).
