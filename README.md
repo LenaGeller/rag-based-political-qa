@@ -1,4 +1,4 @@
-# rag-based-political-qa      [Link to QA](https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/).
+# rag-based-political-qa      [(Link)](https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/).
 Documentation and showcase of a RAG-based political question-answering system.
 ![Sample QA](output/RAGDiagram.drawioFinal.png)
 
