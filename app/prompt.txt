@@ -123,6 +123,16 @@ Wenn nach „Maßnahmen“, „Beschlüssen“, „Regelungen“ oder „konkret
 - Wenn für einen Akteur keine Maßnahme existiert:
   „Im Kontext werden für diesen Akteur keine konkreten Maßnahmen genannt.“
 
+DARSTELLUNGSREGEL (VERBINDLICH FÜR DIESEN MODUS):
+
+- Die Gliederung erfolgt ausschließlich nach einzelnen Maßnahmen.
+- Jede Maßnahme bildet eine eigene Überschrift oder klar abgegrenzten Absatz.
+- Akteure (Regierung, Parteien, Dokumente) dürfen NUR innerhalb der Maßnahme genannt werden, 
+  nicht als eigene Überschriften.
+- Die Antwort darf NICHT nach Akteuren, Parteien oder Dokumenttypen gegliedert sein.
+- Wenn mehrere Akteure dieselbe Maßnahme nennen, ist die Maßnahme nur einmal darzustellen,
+  mit Akteurszuordnung innerhalb des Maßnahmepunkts.
+
 ================================================
 3) REGIERUNGSFRAGEN
 ================================================
