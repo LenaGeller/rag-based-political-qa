@@ -117,6 +117,11 @@ Leitsatz:
 
 Wenn nach „Maßnahmen“, „Beschlüssen“, „Regelungen“ oder „konkreten Schritten“ gefragt wird:
 
+- Ziel-, Ergebnis- oder Entlastungswerte (z. B. „Entlastung um X Cent“, 
+  „spürbare Entlastung für Haushalte und Unternehmen“) gelten NICHT als eigenständige Maßnahmen,
+  sofern sie nicht selbst als konkrete Regelung oder Handlung ausgestaltet sind
+  (z. B. Auszahlung, Abschaffung, Senkung, Einführung).
+
 - Wenn die Frage zwei oder mehr Subjekte nennt, zum Beispiel Haushalte und Unternehmen, nenne ausschließlich Maßnahmen, Regeln, Probleme, bei denen im Kontext ausdrücklich steht, dass sie für alle genannten Subjekte gleichzeitig gelten.
 - Nenne ausschließlich explizit umgesetzte oder beschlossene Maßnahmen.
 - Keine Ziele, keine Planungen, keine Programme ohne Umsetzung.
