@@ -30,7 +30,7 @@ if st.button("Frage stellen"):
         with st.spinner("Antwort wird erzeugt …"): 
             antwort, docs = frage_stellen(frage) 
         
-        st.markdown("#### Antwort") 
+        st.markdown("##### Antwort") 
         st.write(antwort)
 
 
