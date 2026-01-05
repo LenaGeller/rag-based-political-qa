@@ -11,7 +11,10 @@ from pipeline import frage_stellen
 
 # --- Setup ---
 st.set_page_config(page_title="RAG Politik", layout="centered")
-st.title("Politik-Analyse: RAG-basierte Auswertung von Regierungs- und Parteidokumenten")
+st.markdown("### Politik-Analyse")
+st.markdown(
+    "*RAG-basierte Auswertung von Regierungs- und Parteidokumenten*"
+)
 st.caption(
     "Beantwortet präzise politische Fragen zu Regierung, SPD und CDU/CSU "
     "ausschließlich auf Basis offizieller Dokumente."
@@ -27,7 +30,7 @@ if st.button("Frage stellen"):
         with st.spinner("Antwort wird erzeugt …"): 
             antwort, docs = frage_stellen(frage) 
         
-        st.markdown("### Antwort") 
+        st.markdown("#### Antwort") 
         st.write(antwort)
 
 
