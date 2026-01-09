@@ -112,9 +112,3 @@ This project is provided for demonstration and evaluation purposes only.
 It is not intended as a political recommendation system or a substitute for independent political judgment.
 
 ## [Test it!](https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/)
-
-feinere Dokumentenklassifikation bei größerem Quellenbestand
-
-Fazit
-
-Dieses Projekt versteht sich als Experiment und Machbarkeitsnachweis, wie politische Aufklärung durch strukturierte KI-Systeme unterstützt werden kann – nicht als Ersatz für politische Urteilsbildung, sondern als Werkzeug für informierte Bürgerinnen und Bürger.
