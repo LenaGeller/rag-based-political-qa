@@ -4,6 +4,8 @@ Documentation and showcase of a RAG-based political question-answering system.
 
 ## Project Overview
 
+A detailed video explanation of the project can be found [here]([https://drive.google.com/file/d/1Qbn7r3tcOXRRPrLXTFk3xRLPrR4OyeQr/view?usp=sharing](https://drive.google.com/file/d/1oiksxA_y7D1lZZAZNL4Xnk3s0-rC9LA5/view?usp=sharing).
+
 ### RAG-Based Political Question Answering System (Germany)
 ![Sample QA](output/1.png)
 
