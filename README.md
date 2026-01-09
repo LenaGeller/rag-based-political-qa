@@ -1,88 +1,117 @@
-Eine RAG-basierte Analyse-App, die politische Fragen zu Regierung, SPD und CDU/CSU ausschließlich anhand offizieller Dokumente beantwortet.
+# rag-based-political-qa      [(Link)](https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/).
+Documentation and showcase of a RAG-based political question-answering system.
+![Sample QA](output/RAGDiagram.drawioFinal.png)
 
-Projektbeschreibung
-RAG-basierte Politik-Analyse zu Regierung, SPD und CDU/CSU
-Motivation und Zielsetzung
+## Project Overview
 
-Politische Entscheidungen, Parteiprogramme und Koalitionsverträge sind zwar öffentlich zugänglich, sind jedoch lang, komplex formuliert und über viele Dokumente verteilt. In der öffentlichen Debatte dominieren daher oft verkürzte Darstellungen, Schlagzeilen oder ungeprüfte Behauptungen.
+### RAG-Based Political Question Answering System (Germany)
+![Sample QA](output/1.png)
 
-Ziel dieses Projekts war es, ein aufklärendes, niedrigschwelliges Informationssystem zu entwerfen, mit dem Nutzerinnen und Nutzer konkrete Fragen zur Politik der Bundesregierung sowie der Regierungsparteien SPD und CDU/CSU stellen können, ohne selbst umfangreiche Originaldokumente lesen zu müssen – aber dennoch ausschließlich auf Basis dieser offiziellen Texte.
+This project explores how a Retrieval-Augmented Generation (RAG) architecture can be used to support political information access based exclusively on official documents.
 
-Das System soll ermöglichen, sich eigenständig, quellenbasiert und ohne Meinungslenkung über politische Positionen, Maßnahmen und Spannungen zu informieren.
+The system allows users to ask concrete questions about the German federal government and major political actors (SPD, CDU/CSU) and receive structured, source-bound answers without having to read extensive original documents themselves.
 
-Projektfokus und Abgrenzung
+### Motivation
 
-Im Projekt wurde zuerst eine klare inhaltliche Begrenzung vorgenommen:
+Political party programs, coalition agreements, and government documents are publicly available, but often long, complex, and fragmented across multiple sources. As a result, public debate frequently relies on simplified narratives, headlines, or unverified claims.
 
-Regierung / Koalition
+The goal of this project was to design a low-threshold, explanatory system that enables users to explore political positions and measures directly from primary sources, without opinionated summaries or speculative interpretations.
+
+### Scope & Delimitation
+
+To ensure architectural clarity and answer quality, the project intentionally focuses on:
+
+Federal government / coalition documents
 
 SPD
 
 CDU/CSU
 
-Diese Fokussierung diente dazu, die Architektur, die Dokumentenlogik und die Antwortqualität kontrolliert zu entwickeln und zu testen. Das Projekt ist konzeptionell erweiterbar, wurde aber absichtlich nicht auf alle Parteien oder Fraktionen ausgeweitet, um Qualität vor Vollständigkeit zu priorisieren.
+The system is conceptually extensible, but was deliberately limited in scope to prioritize controlled experimentation over completeness.
+![Sample QA](output/8.png)
+![Sample QA](output/2.png)
 
-Zentrale Idee: Strukturierte politische Fragen statt Volltextsuche
+### Core Idea: Structured Political Questions
 
-Der Kern des Projekts ist kein Chatbot im klassischen Sinne, sondern ein strukturierter Analyse-Assistent, der politische Fragen erkennt und entsprechend behandelt.
+This is not a generic political chatbot.
 
-Das System unterscheidet u. a. zwischen:
+Instead, the system acts as a structured analysis assistant that classifies political questions and applies different response strategies depending on the detected intent, including:
 
-Vergleichsfragen (z. B. Unterschiede zwischen Positionen einzelnen Parteien)
+Comparative questions
 
-Prämissenfragen (z. B. „Ist das gerecht?“)
+Premise-based questions
 
-Maßnahmenfragen
+Policy and measure-related questions
 
-Regierungsfragen
+Government responsibility questions
 
-Konflikt- und Spannungsfragen
+Conflict and tension-related questions
 
-Je nach Fragetyp wird eine unterschiedliche Antwortlogik angewendet, um Verzerrungen zu vermeiden (z. B. keine Bewertung, wenn der Kontext keine erlaubt).
+This allows the system to avoid misleading answers (e.g. normative judgments where the source material does not justify them).
+![Sample QA](output/4.png)
 
-Technischer Ansatz (auf konzeptioneller Ebene)
+### System Design (Conceptual)
 
-Das Projekt basiert auf einer Retrieval-Augmented-Generation-Architektur (RAG):
+The project follows a Retrieval-Augmented Generation (RAG) architecture:
 
-Nutzung offizieller, frei zugänglicher Dokumente (Parteiprogramme, Koalitionsvertrag, Beschlussbücher, Anträge)
+Official, publicly available political documents as the sole knowledge base
 
-Vektorbasierte Dokumentensuche
+Vector-based document retrieval
 
-Dokumentgewichtung und Re-Ranking nach politischer Relevanz
+Document weighting and re-ranking based on political relevance
 
-Strikte Kontextbindung: Antworten dürfen nur auf explizit enthaltenen Informationen beruhen
+Strict context binding: answers are limited to explicitly retrievable information
 
-Keine wörtlichen Zitate, sondern klare Akteurszuordnung
+Clear actor attribution instead of free-form summarization
 
-Ein besonderer Fokus lag auf der Trennung unterschiedlicher Dokumenttypen und der Frage, wie politische Prioritäten algorithmisch berücksichtigt werden können.
+A particular focus was placed on distinguishing document types (e.g. party programs vs. coalition agreements) and modeling political priority differences algorithmically.
 
-Ergebnisse und Erkenntnisse
+### Key Insights
 
-Das Projekt zeigt, dass ein RAG-System nicht nur zur Informationssuche, sondern auch zur politischen Einordnung und Strukturierung eingesetzt werden kann – sofern:
+The project demonstrates that RAG systems can support political structuring and contextualization, provided that:
 
-Fragemodi sauber erkannt werden
+- question intent is reliably detected
 
-normative Bewertungen klar von beschreibenden Aussagen getrennt bleiben
+- descriptive statements are clearly separated from normative evaluation
 
-Spannungen und Widersprüche nur dann benannt werden, wenn sie im Kontext belegbar sind
+- conflicts and tensions are only surfaced when explicitly supported by sources
 
-Im Vergleich zu generischen politischen Q&A-Systemen liegt die Stärke dieser App insbesondere in:
+Compared to generic political Q&A systems, the strength of this approach lies in:
 
-methodischer Transparenz
+- methodological transparency
 
-klarer Struktur
+- controlled information density
 
-kontrollierter Verdichtung statt bloßer Zusammenfassung
+- structured reasoning instead of surface-level summaries
 
-Erweiterbarkeit
+### Demo Notes
 
-Das System ist bewusst modular angelegt und lässt sich perspektivisch erweitern, z. B. durch:
+For demo purposes, the vector database is prebuilt and loaded from external storage to allow instant interaction without preprocessing.
 
-Einbindung weiterer Parteien und Fraktionen
+The goal is to demonstrate architecture, document weighting, and retrieval logic without running time- and cost-intensive embedding pipelines at startup.
 
-Ausbau auf Landes- oder EU-Ebene
+Index creation is conceptually part of the system but intentionally externalized in this demo setup. 
 
-Follow-up-Fragen für längere Diskussionsverläufe
+![Sample QA](output/5.png)
+
+### Future Extensions
+
+The system is designed to be modular and extensible, for example by:
+
+- integrating additional parties or parliamentary factions
+
+- expanding to state-level or EU-level documents
+
+- supporting follow-up questions and longer dialogue flows
+
+- refining document classification with larger corpora
+
+### Disclaimer
+
+This project is provided for demonstration and evaluation purposes only.
+It is not intended as a political recommendation system or a substitute for independent political judgment.
+
+## [Test it!](https://rag-politik-demo-9hvadctrythe3q9v5f9qlf.streamlit.app/)
 
 feinere Dokumentenklassifikation bei größerem Quellenbestand
 
