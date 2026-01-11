@@ -16,7 +16,7 @@ st.markdown(
     "#### RAG-basierte Auswertung von Regierungs- und Parteidokumenten"
 )
 st.caption(
-    "Beantwortet präzise politische Fragen zu Regierung, CDU/CSU, SPD und AFD"
+    "Beantwortet präzise politische Fragen zu Regierung, CDU/CSU, SPD und AFD "
     "ausschließlich auf Basis offizieller Dokumente."
 )
 # --- Input ---
