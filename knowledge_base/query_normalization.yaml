@@ -20,6 +20,14 @@ parties:
     - "rechten"
     - "rechtspopulisten"
 
+  GRUENE:
+    - "Grüne"
+    - "Bündnis 90/Die Grünen"
+    - "Bündnis 90"
+    - "die grünen"
+    - "gruene"
+    - "grünen"
+
 government:
   - "Bundesregierung"
   - "Koalition"
