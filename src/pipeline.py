@@ -62,7 +62,7 @@ def frage_stellen(frage: str):
     else:
         docs = db.similarity_search(
             frage,
-            k=25,
+            k=20,
             filter=constraints["filters"]
         )
     
