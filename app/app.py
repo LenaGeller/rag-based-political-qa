@@ -21,7 +21,7 @@ st.caption(
 )
 
 example_questions = [
-    "Wie unterscheiden sich AfD und SPD in der Umweltpolitik?",
+    "Wie unterscheiden sich AfD und Grüne in der Umweltpolitik?",
     "Ist die aktuelle Steuerpolitik aus Sicht der Parteien gerecht?",
     "Wie unterscheiden sich die Positionen von CDU, SPD, AfD, Grünen und Linken zur Migration?",
     "Was sieht der Koalitionsvertrag im Bereich Klima- und Energiepolitik vor?",
