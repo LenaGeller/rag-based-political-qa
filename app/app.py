@@ -8,13 +8,6 @@ sys.path.append(str(BASE_DIR / "src"))
 
 from pipeline import frage_stellen
 
-example_questions = [
-    "Wie unterscheiden sich AfD und SPD in der Umweltpolitik?",
-    "Ist die aktuelle Steuerpolitik aus Sicht der Parteien gerecht?",
-    "Wie unterscheiden sich die Positionen von CDU, SPD, AfD, Grünen und Linken zur Migration?",
-    "Was sieht der Koalitionsvertrag im Bereich Klima- und Energiepolitik vor?",
-    "Welche verbindlichen Eingriffe in die Grundsicherung enthält der Kabinettsbeschluss zum Bürgergeld?"
-]
 
 # --- Setup ---
 st.set_page_config(page_title="RAG Politik", layout="centered")
@@ -23,21 +16,30 @@ st.markdown(
     "#### RAG-basierte Auswertung von Regierungs- und Parteidokumenten"
 )
 st.caption(
-    "Beantwortet präzise politische Fragen zu Regierung und den wichtigsten Bundestagsparteien )"
+    "Beantwortet präzise politische Fragen zu Regierung und den wichtigsten Bundestagsparteien "
     "ausschließlich auf Basis offizieller Dokumente."
 )
 
+example_questions = [
+    "Wie unterscheiden sich AfD und SPD in der Umweltpolitik?",
+    "Ist die aktuelle Steuerpolitik aus Sicht der Parteien gerecht?",
+    "Wie unterscheiden sich die Positionen von CDU, SPD, AfD, Grünen und Linken zur Migration?",
+    "Was sieht der Koalitionsvertrag im Bereich Klima- und Energiepolitik vor?",
+    "Welche verbindlichen Eingriffe in die Grundsicherung enthält der Kabinettsbeschluss zum Bürgergeld?"
+]
+
 st.markdown("### Beispiel-Fragen")
 
-clicked_question = None
+if "frage" not in st.session_state:
+    st.session_state.frage = ""
 
 for q in example_questions:
     if st.button(q):
         clicked_question = q
 # --- Input ---
-frage = frage = st.text_input(
+frage = st.text_input(
     "Deine Frage:",
-    value=clicked_question if clicked_question else ""
+    key="frage"
 )
 
 
