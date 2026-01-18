@@ -12,8 +12,8 @@ example_questions = [
     "Wie unterscheiden sich AfD und SPD in der Umweltpolitik?",
     "Ist die aktuelle Steuerpolitik aus Sicht der Parteien gerecht?",
     "Wie unterscheiden sich die Positionen von CDU, SPD, AfD, Grünen und Linken zur Migration?",
-    "Welche Partei fordert die stärksten Eingriffe in individuelle Freiheiten – und warum?",
-    "Welche Beschlüsse hat die Bundesregierung zur Klimapolitik gefasst?"
+    "Was sieht der Koalitionsvertrag im Bereich Klima- und Energiepolitik vor?",
+    "Welche verbindlichen Eingriffe in die Grundsicherung enthält der Kabinettsbeschluss zum Bürgergeld?"
 ]
 
 # --- Setup ---
