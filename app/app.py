@@ -39,7 +39,7 @@ for q in example_questions:
 
 # --- Input ---
 frage = st.text_input(
-    "Deine Frage:",
+    "### Deine Frage:",
     key="frage"
 )
 
