@@ -38,11 +38,22 @@ div[data-testid="stTextInput"] {
 
 st.markdown(
     """
+    <div style="
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    ">
     <h2 style="margin-bottom:0.2rem;">
         🇩🇪 F<span style="color:#6b7280;">RAG</span> den Bundestag
     </h2>
-    <div style="color:#9ca3af; font-size:0.95rem;">
-        Antworten basieren ausschließlich auf offiziellen Dokumenten
+     <span style="
+            color: #9ca3af;
+            font-size: 0.95rem;
+        ">
+            Antworten basieren ausschließlich auf offiziellen Dokumenten
+        </span>
     </div>
     """,
     unsafe_allow_html=True
@@ -64,7 +75,7 @@ for q in example_questions:
     if st.button(q):
         st.session_state.frage = q
 
-st.markdown("### Deine Frage")
+st.markdown("#### Deine Frage")
 
 frage = st.text_input(
     "",
