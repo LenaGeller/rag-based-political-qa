@@ -25,7 +25,7 @@ div.stButton > button {
 st.markdown(
     """
     <h2 style="margin-bottom:0.2rem;">
-        🇩🇪 Frag den <span style="color:#6b7280;">(RAG)</span> Bundestag
+        🇩🇪 Frag <span style="color:#6b7280;">RAG</span> den Bundestag
     </h2>
     <div style="color:#9ca3af; font-size:0.95rem;">
         Antworten basieren ausschließlich auf offiziellen Dokumenten
