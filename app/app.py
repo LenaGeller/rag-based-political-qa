@@ -88,7 +88,7 @@ if st.button("Frage stellen"):
             label = (
                 f"Quelle {i}: "
                 f"{meta.get('partei', 'regierung')} | "
-                f"{meta.get('chapter', '?')} | "
+                f"{meta.get('chapter', '-')} | "
                 f"{meta.get('titel', '?')}"
             )
 
