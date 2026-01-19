@@ -11,13 +11,25 @@ from pipeline import frage_stellen
 
 # --- Setup ---
 st.set_page_config(page_title="RAG Politik", layout="centered")
-st.markdown("## Frag den Bundestag")
+st.markdown("""
+<style>
+div.stButton > button {
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 0.75rem;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("## 🇩🇪 Frag den Bundestag")
 st.markdown(
-    "#### RAG-basierte Auswertung von Regierungs- und Parteidokumenten"
+    "<div style='font-size:0.9rem; color:gray;'>(F<span style='font-weight:600'>RAG</span> den Bundestag)</div>",
+    unsafe_allow_html=True
 )
+
 st.caption(
-    "Beantwortet präzise politische Fragen zu Regierung und den wichtigsten Bundestagsparteien "
-    "ausschließlich auf Basis offizieller Dokumente."
+    "Antworten basieren ausschließlich auf offiziellen Dokumenten"
 )
 
 example_questions = [
@@ -28,7 +40,7 @@ example_questions = [
     "Welche verbindlichen Eingriffe in die Grundsicherung enthält der Kabinettsbeschluss zum Bürgergeld?"
 ]
 
-st.markdown("### Beispiel-Fragen")
+st.markdown("#### Beispiel-Fragen")
 
 if "frage" not in st.session_state:
     st.session_state.frage = ""
@@ -38,8 +50,9 @@ for q in example_questions:
         st.session_state.frage = q
 
 # --- Input ---
+st.markdown("### Deine Frage")
 frage = st.text_input(
-    "### Deine Frage:",
+    "",
     key="frage"
 )
 
