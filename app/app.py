@@ -22,10 +22,24 @@ div.stButton > button {
 </style>
 """, unsafe_allow_html=True) 
 
+st.markdown("""
+<style>
+/* Abstand UNTER Überschriften reduzieren */
+h1, h2, h3, h4 {
+    margin-bottom: 0.5rem;
+}
+
+/* Abstand VOR Text Inputs reduzieren */
+div[data-testid="stTextInput"] {
+    margin-top: -0.75rem;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.markdown(
     """
     <h2 style="margin-bottom:0.2rem;">
-        🇩🇪 Frag <span style="color:#6b7280;">RAG</span> den Bundestag
+        🇩🇪 F<span style="color:#6b7280;">RAG</span> den Bundestag
     </h2>
     <div style="color:#9ca3af; font-size:0.95rem;">
         Antworten basieren ausschließlich auf offiziellen Dokumenten
@@ -50,16 +64,11 @@ for q in example_questions:
     if st.button(q):
         st.session_state.frage = q
 
-st.markdown("""
-<div style="margin-bottom:0.5rem;">
-    <h3 style="margin-bottom:0.25rem;">Deine Frage</h3>
-</div>
-""", unsafe_allow_html=True)
+st.markdown("### Deine Frage")
 
 frage = st.text_input(
     "",
-    key="frage",
-    placeholder="Stelle hier deine Frage an den Bundestag…"
+    key="frage"
 )
 if st.button("Frage stellen"): 
     if not frage.strip(): 
