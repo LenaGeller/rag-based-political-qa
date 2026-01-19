@@ -17,7 +17,9 @@ div.stButton > button {
     width: 100%;
     text-align: left;
     font-size: 0.9rem;
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    line-height: 1.25;
+    border-radius: 8px;
 }
 </style>
 """, unsafe_allow_html=True) 
@@ -38,23 +40,9 @@ div[data-testid="stTextInput"] {
 
 st.markdown(
     """
-    <div style="
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 0.75rem;
-        margin-bottom: 1.5rem;
-    ">
     <h2 style="margin-bottom:0.2rem;">
         🇩🇪 F<span style="color:#6b7280;">RAG</span> den Bundestag
     </h2>
-     <span style="
-            color: #9ca3af;
-            font-size: 0.95rem;
-        ">
-            Antworten basieren ausschließlich auf offiziellen Dokumenten
-        </span>
-    </div>
     """,
     unsafe_allow_html=True
 )
@@ -66,7 +54,7 @@ example_questions = [
     "Welche verbindlichen Eingriffe in die Grundsicherung enthält der Kabinettsbeschluss zum Bürgergeld?"
 ]
 
-st.markdown("#### Beispiel-Fragen")
+st.markdown("**Beispiel-Fragen**")
 
 if "frage" not in st.session_state:
     st.session_state.frage = ""
